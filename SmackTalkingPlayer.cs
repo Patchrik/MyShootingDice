@@ -7,11 +7,11 @@ namespace ShootingDice
   // A Player who shouts a taunt every time they roll dice
   public class SmackTalkingPlayer : Player
   {
-    public string Taunt { get; }
+    public string Taunt { get; } = "Now watch this scrub!";
 
     public override int Roll()
     {
-      Console.WriteLine($"Now watch this scrub! - {this.Name}");
+      Console.WriteLine($"{Taunt} - {this.Name}");
       return base.Roll();
     }
 
