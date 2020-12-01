@@ -8,17 +8,17 @@ namespace ShootingDice
   {
     static void Main(string[] args)
     {
-      SmackTalkingPlayer player1 = new SmackTalkingPlayer();
+      Player player1 = new SmackTalkingPlayer();
       player1.Name = "Bob";
 
-      OneHigherPlayer player2 = new OneHigherPlayer();
+      Player player2 = new OneHigherPlayer();
       player2.Name = "Sue";
 
       player2.Play(player1);
 
       Console.WriteLine("-------------------");
 
-      Player player3 = new Player();
+      Player player3 = new HumanPlayer();
       player3.Name = "Wilma";
 
       player3.Play(player2);
